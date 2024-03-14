@@ -38,7 +38,7 @@ namespace SalesCalculator.Tests
 
         [TestCase(12.49, true, false, 0)] // Product with exemption
         [TestCase(14.99, false, false, 1.50)] // Product with no exemption
-        [TestCase(47.50, false, true, 7.13)] // Imported product with exemption
+        [TestCase(47.50, false, true, 7.15)] // Imported product with exemption
         [TestCase(10.00, true, true, 0.50)] // Imported product with no exemption
         public void Calculate_Given_Price_And_Tax_Details_Should_Return_Tax_Amount(decimal price, bool hasExemption, bool isImported, decimal expectedTaxAmount)
         {

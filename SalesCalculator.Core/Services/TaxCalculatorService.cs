@@ -29,14 +29,14 @@ namespace SalesCalculator.Core.Services
         {
             if (!isImported) return 0;
 
-            return Math.Round((price * (_taxOptions.ImportRate / 100)), 2, MidpointRounding.AwayFromZero);
+            return Math.Ceiling((price * (_taxOptions.ImportRate / 100)) * 20) / 20;
         }
 
         private decimal GetTaxAmount(decimal price, bool hasExemption)
         {
             if (hasExemption) return 0;
 
-            return Math.Round((price * (_taxOptions.TaxRate / 100)), 2, MidpointRounding.AwayFromZero);
+            return Math.Ceiling((price * (_taxOptions.TaxRate / 100)) * 20) / 20;
         }
     }
 }

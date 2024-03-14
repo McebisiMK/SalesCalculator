@@ -110,11 +110,11 @@ namespace SalesCalculator.Tests.TestData
                     {
                         Name = "Imported bottle of perfume",
                         Quantity = 1,
-                        Price = 54.63M
+                        Price = 54.65M
                     }
                 },
-                SalesTax = 7.63M,
-                Total = 65.13M
+                SalesTax = 7.65M,
+                Total = 65.15M
             };
         }
 
@@ -185,11 +185,11 @@ namespace SalesCalculator.Tests.TestData
                 {
                     Name = "Box of imported chocolates",
                     Quantity = 1,
-                    Price = 11.81M
+                    Price = 11.85M
                 }
                 },
-                SalesTax = 6.66M,
-                Total = 74.64M
+                SalesTax = 6.70M,
+                Total = 74.68M
             };
         }
     }
